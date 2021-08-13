@@ -1,9 +1,19 @@
 # Introduction
-This is a test for seeing how well you can get around doing some basic statistical analyses on a dataset similar to the those that you would see while working at Carta.
+This is a test for seeing how well you can get around doing some basic statistical analyses on a dataset similar to the those that you would see while working at Carta.  Please note that when working in a real-world environment, clinical data often contains a variety of data quality issues that must be accounted for.
 
 In this analysis, you are assuming the role of a data scientist assigned the goal of understanding the usage of surgical supplies for different procedures and surgeons. You have been given a dataset of the supplies that are used for each surgical case, and also a second dataset which gives you the price of each of the items used in surgery. The dataset encompasses the last month of surgeries at your hospital.
 
-## The Goal
+Your code should be clean, concise, and clearly documented with comments.
+
+# Coding Environment and Submitting Results
+To get started, just click the Button below. It will open up an interactive IDE in GitPod, which will have all you need to get started.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/carta-healthcare/carta-work-tests)
+
+Once you have completed all of your required tests, click on the "Workspace" menu at the top, click "Share Workspace Snapshot," and send the resulting
+link back to us.
+
+# The Goal
 Your goal is to answer the following questions:
 
  1. How many of each item were used over the last month?
@@ -36,8 +46,8 @@ primary_surgeon: The surgeon on the case
 primary_procedure: The name of the procedure that was performed
 item_name: The name of the item used
 item_id: A unique id for each item
-number_used: The number of items used
-number_wasted: The number of items wasted
+number_used: The number of items used in this surgical case
+number_wasted: The number of items wasted in this surgical case
 ```
 
 ## pricing.csv
