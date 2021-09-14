@@ -12,9 +12,10 @@ fi
 
 #Start the database during the build process
 # so that we can seed it with users, a dummy seeded db, etc
-pg_ctl -D "$PGDATA" -l "$PGDATA/pg.log" start
+# pg_ctl -D "$PGDATA" -l "$PGDATA/pg.log" start
 
 #Call a script to create a dummy user and seeded dummy db
 #Make sure that the script is executable...
-chmod +x $HOME/init_db.sh
-$HOME/init_db.sh
+MAIN_DIR=/workspace/carta-work-tests
+chmod +x $MAIN_DIR/init_db.sh
+$MAIN_DIR/init_db.sh
