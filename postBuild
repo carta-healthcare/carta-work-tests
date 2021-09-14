@@ -5,10 +5,10 @@ python setup.py develop
 touch environment-installed.txt
 
 #Make sure that everything is initialised properly
-PGDATA=${PGDATA:-/home/jovyan/srv/pgsql}
-if [ ! -d "$PGDATA" ]; then
-  initdb -D "$PGDATA" --auth-host=md5 --encoding=UTF8
-fi
+# PGDATA=${PGDATA:-/home/jovyan/srv/pgsql}
+# if [ ! -d "$PGDATA" ]; then
+#   initdb -D "$PGDATA" --auth-host=md5 --encoding=UTF8
+# fi
 
 #Start the database during the build process
 # so that we can seed it with users, a dummy seeded db, etc
