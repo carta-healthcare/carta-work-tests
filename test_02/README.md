@@ -16,9 +16,12 @@ to browse it if you'd like. Feel free to ask questions about the file formatting
 ## Load into SQL
 First, begin by loading the data into a SQL database. We have Postgres running for you already, so use that. You can connect to the postgres instance with the credentials:
 1. User: carta
-2. Password: password
-3. Database: carta
+2. Database: carta
+3. URL: localhost
 4. Port: 5432
+
+
+As an example, you could use the connection string: 'postgresql+psycopg2://carta:12345@localhost/carta'
 
 The data should be a union of the data in both extract files, with an update time corresponding to the newest update date available for each row.
 
